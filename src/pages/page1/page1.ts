@@ -13,9 +13,13 @@ export class Page1 {
   }
 
   modificaValores() {
-    console.log(this.nome);
     var input = document.getElementById('editNome');
     var label = document.getElementById('labelMensagem');
-    label.innerText = "Alô, " + this.nome + "!";
+    if(typeof(this.nome) !== "undefined") {
+      if (this.nome.length > 0) {
+        label.innerText = "Alô, " + this.nome + "!";
+        this.nome = "";
+      } 
+    }
   } 
 }
