@@ -14,8 +14,8 @@ export class Page1 {
 
   modificaValores() {
     console.log(this.nome);
-    console.log(document.getElementById('editNome'));
-    var nome = document.getElementById('editNome');
-    console.log(nome.innerText);
+    var input = document.getElementById('editNome');
+    var label = document.getElementById('labelMensagem');
+    label.innerText = "Alô, " + this.nome + "!";
   } 
 }
