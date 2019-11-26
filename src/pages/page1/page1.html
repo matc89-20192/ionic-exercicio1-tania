@@ -15,7 +15,7 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
   </p> -->
-  <ion-input placeholder="Text Input" id="editNome"></ion-input>
-  <button (click)='openFilters();' id="btnCumprimentar">Cumprimentar</button>
+  <ion-input type="text" [(ngModel)]="nome" placeholder="Digite seu nome" id="editNome"></ion-input>
+  <button (click)='modificaValores();' id="btnCumprimentar">Cumprimentar</button>
   <ion-label id="labelMensagem">Alô, Mundo!</ion-label>
 </ion-content>
